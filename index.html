@@ -7,16 +7,26 @@
 </head>
 <body>
     <form>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required><br>
-        <label for="Country">Country:</label>
-        <input type="text" name="country" id="country" required pattern="[Uu][Ss][Aa]|[Uu]nited [Ss]tates|[Cc]anada"><br>
-        <label for="zipcode">Zipcode:</label>
-        <input type="text" name="zipcode" id="zipcode" required pattern="[0-9]{5}"><br>
-        <label for="password">Password:</label>
-        <input type="password" name="password" id="password" minlength="5" required><br>
-        <label for="password-confirmation">Password (confirmation):</label>
-        <input type="password" name="password-confirmation" id="password-confirmation" required><br>
+        <label for="email">Email:
+        <input type="email" name="email" id="email" required>
+        <span class="error" aria-live="polite"></span>
+    </label><br>
+        <label for="Country">Country:
+        <input type="text" name="country" id="country" required pattern="[Uu][Ss][Aa]|[Uu]nited [Ss]tates|[Cc]anada">
+        <span class="error" aria-live="polite"></span>
+    </label><br>
+        <label for="zipcode">Zipcode:
+        <input type="text" name="zipcode" id="zipcode" required pattern="[0-9]{5}">
+        <span class="error" aria-live="polite"></span>
+    </label><br>
+        <label for="password">Password:
+        <input type="password" name="password" id="password" minlength="5" required>
+        <span class="error" aria-live="polite"></span>
+    </label><br>
+        <label for="password-confirmation">Password (confirmation):
+        <input type="password" name="password-confirmation" id="password-confirmation" required>
+        <span class="error" aria-live="polite"></span>
+    </label><br>
         <input type="submit" id="submit"><br>
     </form>
     <script src="script.js"></script>

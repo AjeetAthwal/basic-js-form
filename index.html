@@ -6,6 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <form>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required><br>
+        <label for="Country">Country:</label>
+        <input type="text" name="country" id="country" required pattern="[Uu][Ss][Aa]|[Uu]nited [Ss]tates|[Cc]anada"><br>
+        <label for="zipcode">Zipcode:</label>
+        <input type="text" name="zipcode" id="zipcode" required pattern="[0-9]{5}"><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" minlength="5" required><br>
+        <label for="password-confirmation">Password (confirmation):</label>
+        <input type="password" name="password-confirmation" id="password-confirmation" required><br>
+        <input type="submit" id="submit"><br>
+    </form>
     <script src="script.js"></script>
 </body>
 </html>
